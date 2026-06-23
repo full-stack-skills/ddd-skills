@@ -4,7 +4,7 @@
 
 `ddd-skills` is a plugin collection of **16 Agent Skills** for Domain-Driven Design architecture — part of the [Full Stack Skills](https://github.com/partme-ai/full-stack-skills) ecosystem by PartMe.AI. Each skill is a self-contained `SKILL.md` file that AI agents load on-demand.
 
-- **Install**: `npx skills add full-statck-skills/ddd-skills`
+- **Install**: `npx skills add full-stack-skills/ddd-skills`
 - **License**: Apache-2.0
 
 ## Directory Structure

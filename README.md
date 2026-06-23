@@ -4,7 +4,7 @@
 
 **Domain-Driven Design architecture skills — COLA, microservices, hexagonal, clean, event-driven**
 
-[![GitHub](https://img.shields.io/badge/github-full--statck--skills%2Fddd-skills-green.svg)](https://github.com/full-statck-skills/ddd-skills)
+[![GitHub](https://img.shields.io/badge/github-full--stack--skills%2Fddd-skills-green.svg)](https://github.com/full-stack-skills/ddd-skills)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Compatible-purple.svg)](https://agentskills.io)
 
@@ -29,13 +29,13 @@ This package includes **16 skills**. Each skill is a self-contained `SKILL.md` f
 ## 📦 Install
 
 ```bash
-npx skills add full-statck-skills/ddd-skills
+npx skills add full-stack-skills/ddd-skills
 ```
 
 Or install specific skills:
 
 ```bash
-npx skills add full-statck-skills/ddd-skills --skill <skill-name>
+npx skills add full-stack-skills/ddd-skills --skill <skill-name>
 ```
 
 ## 🎯 Skills (16)
@@ -68,13 +68,13 @@ Works with [Claude Code](https://code.claude.com), [Codex](https://developers.op
 **Option 1: npx skills CLI (Recommended)**
 
 ```bash
-npx skills add full-statck-skills/ddd-skills
+npx skills add full-stack-skills/ddd-skills
 ```
 
 **Option 2: Manual Installation**
 
 ```bash
-git clone https://github.com/full-statck-skills/ddd-skills.git
+git clone https://github.com/full-stack-skills/ddd-skills.git
 cp -r ddd-skills/skills/* .claude/skills/
 ```
 
@@ -85,7 +85,7 @@ For more details, see the [Claude Code Skills Guide](https://code.claude.com/doc
 | Resource | Link |
 |----------|------|
 | **Full Stack Skills** | [github.com/partme-ai/full-stack-skills](https://github.com/partme-ai/full-stack-skills) |
-| **All Skill Groups** | [github.com/full-statck-skills](https://github.com/full-statck-skills) |
+| **All Skill Groups** | [github.com/full-stack-skills](https://github.com/full-stack-skills) |
 | **Agent Skills Spec** | [agentskills.io](https://agentskills.io) |
 | **Skills CLI** | [github.com/vercel-labs/skills](https://github.com/vercel-labs/skills) |
 

@@ -6,8 +6,8 @@
     "name": "PartMeAI",
     "email": "partmeai@gmail.com"
   },
-  "homepage": "https://github.com/full-statck-skills/ddd-skills",
-  "repository": "https://github.com/full-statck-skills/ddd-skills",
+  "homepage": "https://github.com/full-stack-skills/ddd-skills",
+  "repository": "https://github.com/full-stack-skills/ddd-skills",
   "source": "./",
   "skills": [
     "./skills/ddd-api-designer",
