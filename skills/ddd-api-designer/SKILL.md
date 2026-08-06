@@ -197,8 +197,8 @@ Step 1 (awesome) → Step 2 (selector) → Step 3 (架构落地) → Step 4 (领
                                          ⭐ ddd-api-designer: 领域模型 → REST API
 ```
 
-**← 上一站**: [ddd-domain-designer](../ddd-domain-designer/) — 先有领域模型再设计 API
-**→ 下一站**: [ddd-code-reviewer](../ddd-code-reviewer/) — 审查 API 设计合规性
-**🔗 相关**: [ddd-cqrs-architecture](../ddd-cqrs-architecture/) — CQRS 深入 | [ddd-architecture-doc](../ddd-architecture-doc/) — OpenAPI 文档输出
+**← 上一站**: hand off to **`ddd-domain-designer`** skill — 先有领域模型再设计 API(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`).
+**→ 下一站**: hand off to **`ddd-code-reviewer`** skill — 审查 API 设计合规性(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`).
+**🔗 相关**: hand off to **`ddd-cqrs-architecture`** skill — CQRS 深入(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`) | **`ddd-architecture-doc`** skill — OpenAPI 文档输出(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-doc`).
 
 > 核心原则：Command 和 Query 分开设计。牢记 PO→DO→DTO→VO 四层转换链，DTO 与领域对象解耦，VO 与数据库结构解耦。

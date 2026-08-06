@@ -502,10 +502,10 @@ flowchart LR
 ```
 
 **← Previous**: 你已经在 DDD 旅程的起点 🚀
-**→ Next**: [selector](../ddd-architecture-selector/) — 选择适合你项目的架构模式
-**🔗 Related**: [domain-designer](../ddd-domain-designer/) — 直接开始领域建模 | [event-storming](../ddd-event-storming/) — 先做事件风暴工作坊
+**→ Next**: hand off to **`ddd-architecture-selector`** skill — 选择适合你项目的架构模式(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-selector`).
+**🔗 Related**: hand off to **`ddd-domain-designer`** skill — 直接开始领域建模(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`) | **`ddd-event-storming`** skill — 先做事件风暴工作坊(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-event-storming`).
 **🏠 Home**: 你在起点
 
 💡 你是第一次接触 DDD？读完 Section 4 的 Pattern Boundaries 表和 Section 6 的核心概念速查，然后去 selector 选架构。
 
-> 📋 See [DESIGN.md](../DESIGN.md) for the complete 16-skill ecosystem map.
+> 📋 完整的 16-skill 生态图见 ddd-skills 仓库根目录的 `DESIGN.md`:`https://github.com/full-stack-skills/ddd-skills/blob/main/DESIGN.md`

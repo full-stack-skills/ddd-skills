@@ -195,10 +195,10 @@ Implementation: [Microsoft DDD Microservice](https://learn.microsoft.com/en-us/d
 
 > 📍 当前：洋葱架构落地
 
-← **上一步**：[selector](../ddd-architecture-selector/)
-→ **下一步**：[domain-designer](../ddd-domain-designer/)
-🔗 **相关**：[cqrs-architecture](../ddd-cqrs-architecture/) | [code-reviewer](../ddd-code-reviewer/)
-🏠 **首页**：[awesome](../ddd-architecture-awesome/)
+← **上一步**：hand off to the **`ddd-architecture-selector`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-selector`)
+→ **下一步**：hand off to the **`ddd-domain-designer`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`)
+🔗 **相关**：hand off to **`ddd-cqrs-architecture`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`) | **`ddd-code-reviewer`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`)
+🏠 **首页**：hand off to **`ddd-architecture-awesome`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-awesome`)
 
 > 核心口诀：内层定义接口，外层实现接口，依赖指向圆心。
 

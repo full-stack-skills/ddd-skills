@@ -175,12 +175,12 @@ Clean Architecture, 整洁架构, Robert C. Martin, Uncle Bob, Enterprise Busine
 
 | 前置/后续 | Skill |
 |-----------|-------|
-| ← 前置 | [ddd-architecture-selector](../ddd-architecture-selector/) — 架构选型 |
-| → 后续 | [ddd-domain-designer](../ddd-domain-designer/) — 领域建模 |
-| → 后续 | [ddd-code-reviewer](../ddd-code-reviewer/) — 代码审查 |
-| → 后续 | [ddd-architecture-evaluator](../ddd-architecture-evaluator/) — 架构评估 |
-| 🔗 相关 | [ddd-architecture-hexagonal](../ddd-architecture-hexagonal/) — 六边形架构 |
-| 🔗 相关 | [ddd-architecture-layered](../ddd-architecture-layered/) — 分层架构 |
+| ← 前置 | **`ddd-architecture-selector`** — 架构选型(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-selector`) |
+| → 后续 | **`ddd-domain-designer`** — 领域建模(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`) |
+| → 后续 | **`ddd-code-reviewer`** — 代码审查(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`) |
+| → 后续 | **`ddd-architecture-evaluator`** — 架构评估(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-evaluator`) |
+| 🔗 相关 | **`ddd-architecture-hexagonal`** — 六边形架构(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-hexagonal`) |
+| 🔗 相关 | **`ddd-architecture-layered`** — 分层架构(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-layered`) |
 
 ## 🧭 DDD Skills Journey
 
@@ -188,7 +188,9 @@ Clean Architecture, 整洁架构, Robert C. Martin, Uncle Bob, Enterprise Busine
 
 `awesome(入门)` → `selector(选型)` → **`clean(整洁架构)`** + `layered/onion/hexagonal/cola` → `domain-designer/cqrs/api-designer` → `code-reviewer` → `testing/devops/evaluator` → `architecture-doc`
 
-**← [selector](../ddd-architecture-selector/) | → [domain-designer](../ddd-domain-designer/) | 🔗 [api-designer](../ddd-api-designer/) · [testing-strategist](../ddd-testing-strategist/) | 🏠 [awesome](../ddd-architecture-awesome/)
+**← **`ddd-architecture-selector`** | → **`ddd-domain-designer`** | 🔗 **`ddd-api-designer`** · **`ddd-testing-strategist`** | 🏠 **`ddd-architecture-awesome`**
+
+(每个 skill 用 `npx skills add full-stack-skills/ddd-skills --skill <name>` 安装)
 
 ---
 

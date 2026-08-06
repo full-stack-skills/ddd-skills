@@ -193,7 +193,7 @@ This skill is pure documentation. It contains no executable scripts, collects no
 
 ## DDD Skills Journey
 > 📍 **You are here: `ddd-testing-strategist` — Step 6**
-**← Previous**: [domain-designer](../ddd-domain-designer/)
-**→ Next**: [devops-integration](../ddd-devops-integration/)
-**🔗 Related**: [code-reviewer](../ddd-code-reviewer/) | [cqrs-architecture](../ddd-cqrs-architecture/)
-**🏠 Home**: [awesome](../ddd-architecture-awesome/)
+**← Previous**: hand off to **`ddd-domain-designer`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`).
+**→ Next**: hand off to **`ddd-devops-integration`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-devops-integration`).
+**🔗 Related**: hand off to **`ddd-code-reviewer`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`) | **`ddd-cqrs-architecture`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`).
+**🏠 Home**: hand off to **`ddd-architecture-awesome`** skill(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-awesome`).

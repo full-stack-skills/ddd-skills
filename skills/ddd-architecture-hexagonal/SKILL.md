@@ -207,6 +207,6 @@ Phase 5: DI 装配 + 测试（1-2 天）→ DI 配置 → 端口 Mock 测试 →
 
 ### 导航
 
-- **→ Next**: [domain-designer](../ddd-domain-designer/) — 为六边形架构设计领域模型
-- **🔗 Related**: [testing-strategist](../ddd-testing-strategist/) — 端口 Mock 测试 | [api-designer](../ddd-api-designer/) — 六边形 API 设计
+- **→ Next**: hand off to the **`ddd-domain-designer`** skill — 为六边形架构设计领域模型。Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`.
+- **🔗 Related**: **`ddd-testing-strategist`** — 端口 Mock 测试(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-testing-strategist`) | **`ddd-api-designer`** — 六边形 API 设计(Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-api-designer`).
 > 💡 六边形 = 端口 + 适配器。验证法：不启动数据库和 HTTP，只跑 CLI/单元测试就能执行业务逻辑 → 边界正确。

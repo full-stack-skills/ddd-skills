@@ -61,11 +61,11 @@ Architecture selection decision guide that evaluates 5 DDD architecture patterns
 | ✅ **Handles** | Team size → architecture mapping | — |
 | ⚠️ **Requires** | Basic project context: team size, business complexity, tech stack | — |
 | ⚠️ **Requires** | Domain expert or product owner involvement for classification | — |
-| ❌ **Out of Scope** | Architecture already decided — do not use this skill | [ddd-architecture-layered](../ddd-architecture-layered/) / [onion](../ddd-architecture-onion/) / [hexagonal](../ddd-architecture-hexagonal/) / [clean](../ddd-architecture-clean/) / [cola](../ddd-architecture-cola/) |
-| ❌ **Out of Scope** | Just need DDD learning & concepts — should not use this skill | [ddd-architecture-awesome](../ddd-architecture-awesome/) |
-| ❌ **Out of Scope** | Evaluate existing architecture health & quality — do not use | [ddd-architecture-evaluator](../ddd-architecture-evaluator/) |
-| ❌ **Out of Scope** | Domain modeling / aggregate design after selection — not use | [ddd-domain-designer](../ddd-domain-designer/) |
-| ❌ **Out of Scope** | Code review for DDD compliance — do not use this skill | [ddd-code-reviewer](../ddd-code-reviewer/) |
+| ❌ **Out of Scope** | Architecture already decided — do not use this skill | **`ddd-architecture-layered`** / **`ddd-architecture-onion`** / **`ddd-architecture-hexagonal`** / **`ddd-architecture-clean`** / **`ddd-architecture-cola`** (Install each with: `npx skills add full-stack-skills/ddd-skills --skill <name>`) |
+| ❌ **Out of Scope** | Just need DDD learning & concepts — should not use this skill | **`ddd-architecture-awesome`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-awesome`) |
+| ❌ **Out of Scope** | Evaluate existing architecture health & quality — do not use | **`ddd-architecture-evaluator`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-evaluator`) |
+| ❌ **Out of Scope** | Domain modeling / aggregate design after selection — not use | **`ddd-domain-designer`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-domain-designer`) |
+| ❌ **Out of Scope** | Code review for DDD compliance — do not use this skill | **`ddd-code-reviewer`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`) |
 | ❌ **Out of Scope** | Non-DDD / standard MVC projects — not use this skill | Use standard MVC guides (not DDD skills) |
 
 ## Audience
@@ -189,13 +189,13 @@ Business Complexity?
 
 | Selected | Next Skill |
 |----------|-----------|
-| Layered | [ddd-architecture-layered](../ddd-architecture-layered/) |
-| Onion | [ddd-architecture-onion](../ddd-architecture-onion/) |
-| Hexagonal | [ddd-architecture-hexagonal](../ddd-architecture-hexagonal/) |
-| Clean | [ddd-architecture-clean](../ddd-architecture-clean/) |
-| COLA | [ddd-architecture-cola](../ddd-architecture-cola/) |
+| Layered | **`ddd-architecture-layered`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-layered`) |
+| Onion | **`ddd-architecture-onion`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-onion`) |
+| Hexagonal | **`ddd-architecture-hexagonal`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-hexagonal`) |
+| Clean | **`ddd-architecture-clean`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-clean`) |
+| COLA | **`ddd-architecture-cola`** (Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-cola`) |
 
-Related: [ddd-cqrs-architecture](../ddd-cqrs-architecture/), [ddd-domain-designer](../ddd-domain-designer/), [ddd-architecture-evaluator](../ddd-architecture-evaluator/)
+Related: **`ddd-cqrs-architecture`** / **`ddd-domain-designer`** / **`ddd-architecture-evaluator`** (each installable via `npx skills add full-stack-skills/ddd-skills --skill <name>`)
 
 ## Gotchas
 

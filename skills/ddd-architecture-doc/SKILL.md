@@ -214,8 +214,8 @@ This skill is pure documentation. It does not collect user data, does not access
 
 ## Related Skills
 
-- [ddd-architecture-selector](../ddd-architecture-selector/) — Architecture selection (before you document, make decisions)
-- [ddd-architecture-evaluator](../ddd-architecture-evaluator/) — Periodic architecture health check
-- [ddd-code-reviewer](../ddd-code-reviewer/) — Code-level DDD compliance check
-- [ddd-cqrs-architecture](../ddd-cqrs-architecture/) — CQRS detail for API documentation
-- [awesome](../ddd-architecture-awesome/) — DDD concept overview
+- **`ddd-architecture-selector`** — Architecture selection (before you document, make decisions). Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-selector`.
+- **`ddd-architecture-evaluator`** — Periodic architecture health check. Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-evaluator`.
+- **`ddd-code-reviewer`** — Code-level DDD compliance check. Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-code-reviewer`.
+- **`ddd-cqrs-architecture`** — CQRS detail for API documentation. Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`.
+- **`ddd-architecture-awesome`** — DDD concept overview. Install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-awesome`.
