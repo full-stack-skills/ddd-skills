@@ -25,11 +25,6 @@
     "./skills/ddd-devops-integration",
     "./skills/ddd-domain-designer",
     "./skills/ddd-event-storming",
-    "./skills/ddd-testing-strategist",
-    "./skills/ddd4j-core",
-    "./skills/ddd4j-jackson",
-    "./skills/ddd4j-mybatis",
-    "./skills/ddd4j-validation",
-    "./skills/ddd4j-satoken"
+    "./skills/ddd-testing-strategist"
   ]
 }
