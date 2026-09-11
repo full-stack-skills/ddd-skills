@@ -199,11 +199,11 @@ Related: **`ddd-cqrs-architecture`** / **`ddd-domain-designer`** / **`ddd-archit
 
 ## Gotchas
 
-See [references/gotchas.md](references/gotchas.md) for 15 pitfalls.
+See [references/gotchas.md](references/guides/10-gotchas.md) for 15 pitfalls.
 
 ## FAQ
 
-See [references/faq.md](references/faq.md) for 15 Q&A.
+See [references/faq.md](references/guides/09-faq.md) for 15 Q&A.
 
 ## Security & Safety
 

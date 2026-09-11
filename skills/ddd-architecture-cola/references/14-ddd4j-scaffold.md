@@ -14,10 +14,10 @@ ddd4j Boot 是 COLA v5 的 Java 参考实现，提供完整的项目生成和验
 ### Step 2: 加载对应的示例
 
 从 `examples/` 目录加载合适的项目结构示例：
-- `examples/13-architecture-patterns.md` — DDD、Hexagonal、Clean、COLA V5 四种架构模式
-- `examples/14-single-module.md` — 单模块单体结构
-- `examples/15-multi-module.md` — 多模块单体结构
-- `examples/16-microservices.md` — 微服务结构
+- `../examples/13-architecture-patterns.md` — DDD、Hexagonal、Clean、COLA V5 四种架构模式
+- `../examples/14-single-module.md` — 单模块单体结构
+- `../examples/15-multi-module.md` — 多模块单体结构
+- `../examples/16-microservices.md` — 微服务结构
 
 ### Step 3: 收集项目信息
 

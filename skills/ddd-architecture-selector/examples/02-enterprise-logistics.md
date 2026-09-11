@@ -81,8 +81,8 @@ Cross-cutting:
 
 ## Next Steps
 
-1. Proceed to [ddd-architecture-hexagonal](../ddd-architecture-hexagonal/) for Port/Adapter implementation
-2. Follow with [ddd-cqrs-architecture](../ddd-cqrs-architecture/) for CQRS L2 + ES deep-dive
+1. Proceed to **`ddd-architecture-hexagonal`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-hexagonal`) for Port/Adapter implementation
+2. Follow with **`ddd-cqrs-architecture`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`) for CQRS L2 + ES deep-dive
 3. Carrier Integration ACL as first pilot (highest adapter diversity, lowest risk domain)
 4. Shipment Tracking as second pilot (demonstrates CQRS L2 value)
 5. Set up Architecture Decision Records (ADR) per squad to track evolution

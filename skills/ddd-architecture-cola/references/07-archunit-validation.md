@@ -138,7 +138,7 @@ jobs:
 
 ### Python 校验脚本
 
-提供 `scripts/check_cola.py` 进行静态分析：
+提供 `../scripts/check_cola.py` 进行静态分析：
 ```bash
 python scripts/check_cola.py /path/to/project
 ```
@@ -154,7 +154,7 @@ python scripts/check_cola.py /path/to/project
 
 ## check_cola.py 校验
 
-`scripts/check_cola.py` 提供以下校验能力：
+`../scripts/check_cola.py` 提供以下校验能力：
 
 1. **Domain 纯净度检查**：扫描 Domain 层的 import 语句，检测框架依赖
 2. **依赖方向检查**：检测 Domain → Infrastructure/App/Adapter 的反向依赖

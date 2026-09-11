@@ -1,6 +1,6 @@
 # Quick Reference Cheatsheet
 
-> See [SKILL.md](../SKILL.md#sources) for full source list.
+> See [SKILL.md](../../SKILL.md#sources) for full source list.
 
 This cheatsheet summarizes an opinionated synthesis, not a single canonical architecture. Use DDD, Hexagonal, Clean Architecture, Onion Architecture, CQRS, and Event Sourcing independently when only one pattern fits the problem.
 

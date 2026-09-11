@@ -72,7 +72,7 @@ stages:
   - containerize
   - deploy
 ```
-ArchUnit validation in `architecture-check` stage: P0 tests (`DomainPurityTest`, `LayeringComplianceTest`) block on failure; P1 (`ModuleDependencyTest`) warns with approval; P2 (`NamingConventionTest`) reports only. Key ArchUnit rules — domain must not depend on Spring/JPA/MyBatis; layer access restrictions (Domain only by Application, Infrastructure, Interface); no cyclic package dependencies. Full guide: [references/ci-cd-archunit-setup.md](references/ci-cd-archunit-setup.md)
+ArchUnit validation in `architecture-check` stage: P0 tests (`DomainPurityTest`, `LayeringComplianceTest`) block on failure; P1 (`ModuleDependencyTest`) warns with approval; P2 (`NamingConventionTest`) reports only. Key ArchUnit rules — domain must not depend on Spring/JPA/MyBatis; layer access restrictions (Domain only by Application, Infrastructure, Interface); no cyclic package dependencies. Full guide: [references/ci-cd-archunit-setup.md](references/01-ci-cd-archunit-setup.md)
 
 ---
 
@@ -83,7 +83,7 @@ ddd-project/
 ├── domain/ (zero framework deps) → application/ (depends on domain only) → infrastructure/ (implements domain interfaces)
 ├── adapter/ (REST/event adapters) → start/ (boot entry)
 ```
-Build optimization: `mvn compile -pl domain -am` (~60% faster changed-only), `mvn -T 4` (~40% parallel), `mvn verify -pl '!domain'` (skip domain), `actions/cache` for `target/` (~80%). Domain purity enforced via Maven Enforcer (bans Spring deps in domain module). Full config: [references/multi-module-build-config.md](references/multi-module-build-config.md)
+Build optimization: `mvn compile -pl domain -am` (~60% faster changed-only), `mvn -T 4` (~40% parallel), `mvn verify -pl '!domain'` (skip domain), `actions/cache` for `target/` (~80%). Domain purity enforced via Maven Enforcer (bans Spring deps in domain module). Full config: [references/multi-module-build-config.md](references/09-multi-module-build-config.md)
 
 ---
 
@@ -97,7 +97,7 @@ FROM eclipse-temurin:17-jre-alpine
 COPY --from=builder start/target/*.jar app.jar
 HEALTHCHECK --interval=30s CMD curl -f http://localhost:8080/actuator/health
 ```
-**CQRS** — Separate images: Command (`-Xms512m -Xmx2g -XX:+UseZGC`, CPU-optimized); Query (`-Xms1g -Xmx4g`, memory-optimized). **K8s Patterns**: Per-BC `Namespace`, DB migration `initContainers` + Flyway, CQRS split `HorizontalPodAutoscaler`, `NetworkPolicy` isolation. Templates: [dockerfile-patterns.md](references/dockerfile-patterns.md) | [k8s-ddd-reference.md](references/k8s-ddd-reference.md)
+**CQRS** — Separate images: Command (`-Xms512m -Xmx2g -XX:+UseZGC`, CPU-optimized); Query (`-Xms1g -Xmx4g`, memory-optimized). **K8s Patterns**: Per-BC `Namespace`, DB migration `initContainers` + Flyway, CQRS split `HorizontalPodAutoscaler`, `NetworkPolicy` isolation. Templates: [dockerfile-patterns.md](references/04-dockerfile-patterns.md) | [k8s-ddd-reference.md](references/07-k8s-ddd-reference.md)
 
 ---
 
@@ -113,7 +113,7 @@ CREATE TABLE outbox_message (id UUID PRIMARY KEY, event_id UUID UNIQUE NOT NULL,
     retry_count INT DEFAULT 0, created_at TIMESTAMPTZ DEFAULT NOW());
 CREATE INDEX idx_outbox_pending ON outbox_message(status) WHERE status = 'PENDING';
 ```
-Strategy: Layered single DB → Flyway/Liquibase sequential; CQRS L2 → Dual tracks + lag; Event Sourcing → Axon/EventStoreDB append-only; Per microservice → Per-BC Flyway. Full scripts: [flyway-migration.md](references/flyway-domain-event-migration.md) | [db-strategies.md](references/database-migration-strategies.md)
+Strategy: Layered single DB → Flyway/Liquibase sequential; CQRS L2 → Dual tracks + lag; Event Sourcing → Axon/EventStoreDB append-only; Per microservice → Per-BC Flyway. Full scripts: [flyway-migration.md](references/05-flyway-domain-event-migration.md) | [db-strategies.md](references/02-database-migration-strategies.md)
 
 ---
 
@@ -121,7 +121,7 @@ Strategy: Layered single DB → Flyway/Liquibase sequential; CQRS L2 → Dual tr
 
 Bus metrics: `domain.events.published` (Counter), `domain.events.processing.duration` (Histogram p50/p95/p99), `domain.aggregate.load.duration` (Histogram), `domain.outbox.depth` (Gauge).
 
-Alert rules: DomainEventBacklog (rate > 100 for 2m, critical), OutboxQueueGrowing (depth > 1000 for 1m, critical), EventProcessingErrorRate (> 5% for 2m, warning). Full config: [ddd-observability-config.md](references/ddd-observability-config.md)
+Alert rules: DomainEventBacklog (rate > 100 for 2m, critical), OutboxQueueGrowing (depth > 1000 for 1m, critical), EventProcessingErrorRate (> 5% for 2m, warning). Full config: [ddd-observability-config.md](references/03-ddd-observability-config.md)
 
 ---
 
@@ -157,20 +157,20 @@ ddd devops, ddd ci/cd, archunit ci, domain event monitoring, ddd docker, ddd kub
 
 ## References
 
-- [CI/CD ArchUnit Setup](references/ci-cd-archunit-setup.md) — ArchUnit CI/CD integration guide
-- [Dockerfile Patterns](references/dockerfile-patterns.md) — Dockerfiles by DDD architecture type
-- [K8s DDD Reference](references/k8s-ddd-reference.md) — K8s deployment for bounded contexts
-- [Flyway Domain Event Migration](references/flyway-domain-event-migration.md) — Event store and outbox scripts
-- [Monitoring & Alerting](references/monitoring-alerting-reference.md) — Prometheus metrics and alerting rules
-- [Multi-Module Build Config](references/multi-module-build-config.md) — Maven/Gradle build optimization
-- [DDD Observability Config](references/ddd-observability-config.md) — Micrometer/OTel/Logback configuration
-- [GitLab CI Pipeline Reference](references/gitlab-ci-ddd-pipeline-reference.md) — GitLab CI complete pipeline
-- [Database Migration Strategies](references/database-migration-strategies.md) — Event-driven migration strategies
+- [CI/CD ArchUnit Setup](references/01-ci-cd-archunit-setup.md) — ArchUnit CI/CD integration guide
+- [Dockerfile Patterns](references/04-dockerfile-patterns.md) — Dockerfiles by DDD architecture type
+- [K8s DDD Reference](references/07-k8s-ddd-reference.md) — K8s deployment for bounded contexts
+- [Flyway Domain Event Migration](references/05-flyway-domain-event-migration.md) — Event store and outbox scripts
+- [Monitoring & Alerting](references/08-monitoring-alerting-reference.md) — Prometheus metrics and alerting rules
+- [Multi-Module Build Config](references/09-multi-module-build-config.md) — Maven/Gradle build optimization
+- [DDD Observability Config](references/03-ddd-observability-config.md) — Micrometer/OTel/Logback configuration
+- [GitLab CI Pipeline Reference](references/06-gitlab-ci-ddd-pipeline-reference.md) — GitLab CI complete pipeline
+- [Database Migration Strategies](references/02-database-migration-strategies.md) — Event-driven migration strategies
 
 ## Examples
 
-- [GitHub Actions Pipeline](examples/github-actions-pipeline.md) — Complete GitHub Actions workflow with ArchUnit
-- [GitLab CI ArchUnit Pipeline](examples/gitlab-ci-archunit-pipeline.md) — GitLab CI with architecture validation
-- [K8s DDD Deployment](examples/k8s-ddd-deployment.yaml) — K8s manifests for bounded context deployment
-- [Flyway Domain Event Migration](examples/flyway-domain-event-migration.sql) — Complete migration SQL scripts
-- [Grafana Domain Health Dashboard](examples/grafana-domain-health-dashboard.md) — Domain event monitoring dashboard
+- [GitHub Actions Pipeline](examples/02-github-actions-pipeline.md) — Complete GitHub Actions workflow with ArchUnit
+- [GitLab CI ArchUnit Pipeline](examples/03-gitlab-ci-archunit-pipeline.md) — GitLab CI with architecture validation
+- [K8s DDD Deployment](examples/05-k8s-ddd-deployment.yaml) — K8s manifests for bounded context deployment
+- [Flyway Domain Event Migration](examples/01-flyway-domain-event-migration.sql) — Complete migration SQL scripts
+- [Grafana Domain Health Dashboard](examples/04-grafana-domain-health-dashboard.md) — Domain event monitoring dashboard

@@ -169,24 +169,24 @@ DDD testing, test pyramid, aggregate root test, value object test, domain servic
 ## References
 | 文件 | 用途 |
 |------|------|
-| [references/testing.md](references/testing.md) | 测试金字塔 + 各层 TypeScript 示例 |
-| [references/mock-integration-patterns.md](references/mock-integration-patterns.md) | Mock 实现 + Java 集成测试 |
-| [references/clean-ddd-hexagonal-testing.md](references/clean-ddd-hexagonal-testing.md) | Clean/Hexagonal/DDD 多层测试 |
-| [references/unit-testing-strategies.md](references/unit-testing-strategies.md) | VO/AR/DS 单元测试 + 状态转移 |
-| [references/integration-test-strategies.md](references/integration-test-strategies.md) | Repository/API 集成测试 + N+1 |
-| [references/cqrs-event-sourcing-testing.md](references/cqrs-event-sourcing-testing.md) | CQRS + ES 重放/投影/快照测试 |
-| [references/test-coverage-targets.md](references/test-coverage-targets.md) | 覆盖率目标 + 分支覆盖率 + JaCoCo |
-| [references/ci-cd-test-stages.md](references/ci-cd-test-stages.md) | CI/CD 三阶段 + GitHub Actions |
-| [references/architecture-testing-comparison.md](references/architecture-testing-comparison.md) | 各架构测试差异 + 项目阶段策略 |
-| [references/test-driven-domain-design.md](references/test-driven-domain-design.md) | TDDD 四步工作流 + 完整案例 |
+| [references/testing.md](references/09-testing.md) | 测试金字塔 + 各层 TypeScript 示例 |
+| [references/mock-integration-patterns.md](references/06-mock-integration-patterns.md) | Mock 实现 + Java 集成测试 |
+| [references/clean-ddd-hexagonal-testing.md](references/03-clean-ddd-hexagonal-testing.md) | Clean/Hexagonal/DDD 多层测试 |
+| [references/unit-testing-strategies.md](references/10-unit-testing-strategies.md) | VO/AR/DS 单元测试 + 状态转移 |
+| [references/integration-test-strategies.md](references/05-integration-test-strategies.md) | Repository/API 集成测试 + N+1 |
+| [references/cqrs-event-sourcing-testing.md](references/04-cqrs-event-sourcing-testing.md) | CQRS + ES 重放/投影/快照测试 |
+| [references/test-coverage-targets.md](references/07-test-coverage-targets.md) | 覆盖率目标 + 分支覆盖率 + JaCoCo |
+| [references/ci-cd-test-stages.md](references/02-ci-cd-test-stages.md) | CI/CD 三阶段 + GitHub Actions |
+| [references/architecture-testing-comparison.md](references/01-architecture-testing-comparison.md) | 各架构测试差异 + 项目阶段策略 |
+| [references/test-driven-domain-design.md](references/08-test-driven-domain-design.md) | TDDD 四步工作流 + 完整案例 |
 ## Examples
 | 文件 | 用途 |
 |------|------|
-| [examples/domain-test-examples.md](examples/domain-test-examples.md) | VO + AR + DS 完整测试示例 |
-| [examples/app-adapter-test-examples.md](examples/app-adapter-test-examples.md) | App Service + Adapter + E2E |
-| [examples/cqrs-es-test-examples.md](examples/cqrs-es-test-examples.md) | CQRS + ES 重放/投影/快照测试 |
-| [examples/builder-mock-patterns.md](examples/builder-mock-patterns.md) | Builder + Mock Repository/EventPublisher |
-| [examples/architecture-test-examples.md](examples/architecture-test-examples.md) | ArchUnit 架构测试（分层/聚合隔离） |
+| [examples/domain-test-examples.md](examples/05-domain-test-examples.md) | VO + AR + DS 完整测试示例 |
+| [examples/app-adapter-test-examples.md](examples/01-app-adapter-test-examples.md) | App Service + Adapter + E2E |
+| [examples/cqrs-es-test-examples.md](examples/04-cqrs-es-test-examples.md) | CQRS + ES 重放/投影/快照测试 |
+| [examples/builder-mock-patterns.md](examples/03-builder-mock-patterns.md) | Builder + Mock Repository/EventPublisher |
+| [examples/architecture-test-examples.md](examples/02-architecture-test-examples.md) | ArchUnit 架构测试（分层/聚合隔离） |
 ## Security & Safety
 
 This skill is pure documentation. It contains no executable scripts, collects no user data, accesses no external services or networks.

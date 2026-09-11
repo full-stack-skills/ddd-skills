@@ -64,15 +64,15 @@ L3 Event Sourcing          → EventStore + Projection
 
 ### L1 — Model Separation
 成本最低：仅代码层分离 Command/Query Service，共享数据库。适用于读写数据结构相同但逻辑分离的场景。
-参考示例: `examples/order-l1-model-separation.md`
+参考示例: `examples/06-order-l1-model-separation.md`
 
 ### L2 — Database Separation
 中等成本：分离 Command DB 和 Query DB，通过领域事件同步。适用于读负载高、独立优化策略需求的场景。
-参考示例: `examples/order-l2-db-separation.md`
+参考示例: `examples/07-order-l2-db-separation.md`
 
 ### L3 — Event Sourcing
 最高成本：以事件流作为唯一真相源，通过投影重建读模型。适用于审计追踪、时间旅行查询、事件重放的场景。
-参考示例: `examples/order-l3-event-sourcing.md`
+参考示例: `examples/08-order-l3-event-sourcing.md`
 
 ## Event Lifecycle
 
@@ -87,7 +87,7 @@ L3 Event Sourcing          → EventStore + Projection
 - **CDC（Debezium binlog）**: 延迟 <100ms, 中复杂度, 高流量低延迟
 - **事务提交回调**: 延迟 <10ms, 低复杂度, Spring 项目
 
-详细参考: `references/cqrs-events.md`
+详细参考: `references/02-cqrs-events.md`
 
 ## 幂等设计
 
@@ -98,7 +98,7 @@ L3 Event Sourcing          → EventStore + Projection
 | **Redis + TTL** | 低 | ★★☆ | 非关键通知 |
 | **业务幂等** | 低 | ★★★ | 简单操作 |
 
-详细参考（含代码示例）: `references/event-governance.md`
+详细参考（含代码示例）: `references/07-event-governance.md`
 
 ## 各架构 CQRS 集成模式
 
@@ -110,7 +110,7 @@ L3 Event Sourcing          → EventStore + Projection
 | **Clean** | UseCase 层 Command Interactor + Query Interactor | `usecase/interactor/command/` + `usecase/interactor/query/` |
 | **COLA** | App 层 Command + Query 子模块 | `app/command/` + `app/query/` |
 
-详细参考: `examples/multi-architecture-integration.md`
+详细参考: `examples/04-multi-architecture-integration.md`
 
 ## Gotchas
 
@@ -175,21 +175,21 @@ L3 Event Sourcing          → EventStore + Projection
 ## References
 
 ### Architecture CQRS Patterns
-- `references/architecture/clean-ddd-hexagonal-cqrs.md` — CQRS & Domain Events：Commands, Queries, Read Models, Event Dispatcher, Outbox
-- `references/cqrs-events.md` — CQRS 领域事件：事件分类、事件存储、投影策略、版本管理
-- `references/cqrs-mindmap.md` — CQRS 思维导图：适用场景、实施策略
-- `references/ddd4j-cqrs-mindmap.md` — CQRS 思维导图：核心理念、架构模式、组件
+- `references/architecture/01-clean-ddd-hexagonal-cqrs.md` — CQRS & Domain Events：Commands, Queries, Read Models, Event Dispatcher, Outbox
+- `references/02-cqrs-events.md` — CQRS 领域事件：事件分类、事件存储、投影策略、版本管理
+- `references/03-cqrs-mindmap.md` — CQRS 思维导图：适用场景、实施策略
+- `references/04-ddd4j-cqrs-mindmap.md` — CQRS 思维导图：核心理念、架构模式、组件
 
 ### Domain Events & Event Governance
-- `references/event-governance.md` — 事件治理：Outbox DDL、幂等、重试/死信/补偿/对账
-- `references/domain-events/domain-events-deep.md` — 领域事件深入：事件驱动设计原则
-- `references/domain-vs-integration-events.md` — 领域事件 vs 集成事件：边界划分
-- `references/partme-06-domain-events.md` — 领域事件实操：保险承保案例
+- `references/07-event-governance.md` — 事件治理：Outbox DDL、幂等、重试/死信/补偿/对账
+- `references/domain-events/01-domain-events-deep.md` — 领域事件深入：事件驱动设计原则
+- `references/06-domain-vs-integration-events.md` — 领域事件 vs 集成事件：边界划分
+- `references/08-partme-06-domain-events.md` — 领域事件实操：保险承保案例
 
 ## Examples
 
-- `examples/order-l1-model-separation.md` — L1 模型分离完整示例
-- `examples/order-l2-db-separation.md` — L2 数据库分离 + 事件同步
-- `examples/order-l3-event-sourcing.md` — L3 Event Sourcing 完整示例
-- `examples/multi-architecture-integration.md` — 5 种架构 CQRS 集成对比
-- `examples/inventory-cqrs.md` — 库存 CQRS + 幂等策略实现
+- `examples/06-order-l1-model-separation.md` — L1 模型分离完整示例
+- `examples/07-order-l2-db-separation.md` — L2 数据库分离 + 事件同步
+- `examples/08-order-l3-event-sourcing.md` — L3 Event Sourcing 完整示例
+- `examples/04-multi-architecture-integration.md` — 5 种架构 CQRS 集成对比
+- `examples/03-inventory-cqrs.md` — 库存 CQRS + 幂等策略实现

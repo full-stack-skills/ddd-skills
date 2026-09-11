@@ -206,10 +206,10 @@ Phase 5: 升级架构       ← 根据需要选 Hexagonal/Clean/COLA
 
 | 文件 | 内容 |
 |------|------|
-| [examples/spring-boot-order-example.md](examples/spring-boot-order-example.md) | Spring Boot 订单系统完整示例 |
-| [examples/ddd4j-springboot-practice.md](examples/ddd4j-springboot-practice.md) | DDD4J Spring Boot 实战（Nova Coffee） |
-| [examples/partme-91-code-example.md](examples/partme-91-code-example.md) | 在线请假系统完整代码 |
-| [examples/ddd4j-spring-boot-guide.md](examples/ddd4j-spring-boot-guide.md) | Spring Boot DDD 分层实操指南 |
+| [examples/spring-boot-order-example.md](examples/04-spring-boot-order-example.md) | Spring Boot 订单系统完整示例 |
+| [examples/ddd4j-springboot-practice.md](examples/02-ddd4j-springboot-practice.md) | DDD4J Spring Boot 实战（Nova Coffee） |
+| [examples/partme-91-code-example.md](examples/03-partme-91-code-example.md) | 在线请假系统完整代码 |
+| [examples/ddd4j-spring-boot-guide.md](examples/01-ddd4j-spring-boot-guide.md) | Spring Boot DDD 分层实操指南 |
 | [examples/05-archunit-layered-config.md](examples/05-archunit-layered-config.md) | ArchUnit 分层验证配置 |
 | [examples/06-monolith-simple.md](examples/06-monolith-simple.md) | 单体简单项目：单模块四层分包 |
 | [examples/07-monolith-complex.md](examples/07-monolith-complex.md) | 单体复杂项目：多聚合根 + 跨聚合编排 |

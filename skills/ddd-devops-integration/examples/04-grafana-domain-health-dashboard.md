@@ -30,4 +30,4 @@
   severity: warning
 ```
 
-> 完整 Prometheus 配置见 [ddd-observability-config.md](../references/ddd-observability-config.md)。
+> 完整 Prometheus 配置见 [ddd-observability-config.md](../references/03-ddd-observability-config.md)。

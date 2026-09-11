@@ -77,7 +77,7 @@ Module Structure:
 
 ## Next Steps
 
-1. Proceed to [ddd-architecture-cola](../ddd-architecture-cola/) for implementation
+1. Proceed to **`ddd-architecture-cola`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-cola`) for implementation
 2. Order BC as first implementation module (highest priority Core domain)
 3. Set up ArchUnit dependency checks in CI pipeline
 4. Revisit CQRS upgrade to L2 when product search becomes bottleneck

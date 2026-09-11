@@ -61,7 +61,7 @@ Body sections (in order):
 4. **Detailed guidance** — Architecture diagrams, code examples, templates, checklists
 5. **Related skills** — Cross-references to other skills in the collection
 
-- Lines per SKILL.md: ~170–510 (most ~200)
+- Lines per SKILL.md: ~168–470 (most ~200); keep under 500 — move long sections into `references/`
 - Use Chinese for domain terminology when skill targets Chinese-speaking audience
 - Skills reference each other (e.g., domain-designer references event-storming)
 

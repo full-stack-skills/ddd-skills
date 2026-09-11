@@ -77,7 +77,7 @@ Enterprise 单元测试 → UseCase 集成测试 → Adapter 集成测试 → Ar
 Enterprise ← UseCase ← Adapter ← Framework
 ```
 
-详细原理（四层结构、架构对比、数据流转）参考 [architecture-principles](references/architecture-principles.md)。目录结构参考 [directory-structure](references/directory-structure.md)。
+详细原理（四层结构、架构对比、数据流转）参考 [architecture-principles](references/09-architecture-principles.md)。目录结构参考 [directory-structure](references/12-directory-structure.md)。
 
 ## 开发规范
 
@@ -141,7 +141,7 @@ Clean Architecture, 整洁架构, Robert C. Martin, Uncle Bob, Enterprise Busine
 
 | 文件 | 内容 |
 |------|------|
-| [references/architecture-principles.md](references/architecture-principles.md) | 四层结构、依赖规则、架构对比、数据流转、目录结构 |
+| [references/architecture-principles.md](references/09-architecture-principles.md) | 四层结构、依赖规则、架构对比、数据流转、目录结构 |
 | [references/01-core-entities.md](references/01-core-entities.md) | Enterprise 层实体、值对象、领域事件、异常模板与测试 |
 | [references/02-usecase-ports.md](references/02-usecase-ports.md) | Input/Output Port 定义、DTO 设计、端口设计规则 |
 | [references/03-interactors.md](references/03-interactors.md) | Interactor 实现模板、复杂编排、查询 Interactor、测试 |

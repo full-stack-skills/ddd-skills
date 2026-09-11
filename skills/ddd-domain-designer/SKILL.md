@@ -23,7 +23,7 @@ Step 4: 微服务拆分 — 评估各BC独立部署价值。一个BC = 一个潜
 Step 5: 详细设计 — 确定聚合根、实体、值对象、领域事件(过去式命名)、不变式。
 Step 6: 开发测试 — 聚合为单位组织开发测试，每聚合一个Repository接口。
 
-详见 [references/ddd-tactical.md](references/ddd-tactical.md)
+详见 [references/ddd-tactical.md](references/06-ddd-tactical.md)
 
 ## When to Use
 
@@ -60,7 +60,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 
 ## 事件风暴驱动 6 步流程
 
-详见 [references/ddd-tactical.md](references/ddd-tactical.md)、[references/clean-ddd-hexagonal-tactical.md](references/clean-ddd-hexagonal-tactical.md)
+详见 [references/ddd-tactical.md](references/06-ddd-tactical.md)、[references/clean-ddd-hexagonal-tactical.md](references/04-clean-ddd-hexagonal-tactical.md)
 
 ## Aggregate Rules / 聚合设计五步法 + 六原则
 
@@ -77,7 +77,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 | 5 | **通过应用层实现跨聚合调用** | 领域服务不直接跨聚合 | 应用层承担编排职责？ |
 | 6 | **适合自己才是最好的** | 可突破原则但需记录理由 | ADR记录决策理由 |
 
-详见 [references/advanced-tactical-patterns.md](references/advanced-tactical-patterns.md)、[references/domain-invariants.md](references/domain-invariants.md)
+详见 [references/advanced-tactical-patterns.md](references/01-advanced-tactical-patterns.md)、[references/domain-invariants.md](references/08-domain-invariants.md)
 
 ## 限界上下文划分
 
@@ -85,7 +85,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 
 **7种映射模式**: Partnership(高耦合) | Shared Kernel(高) | Customer-Supplier(中) | Conformist(中) | Anti-Corruption Layer(低) | Open Host Service(低) | Published Language(低)
 
-详见 [references/bounded-context-mapping.md](references/bounded-context-mapping.md)
+详见 [references/bounded-context-mapping.md](references/02-bounded-context-mapping.md)
 
 ## 领域对象 → 代码对象映射
 
@@ -93,7 +93,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 
 **转换链**: VO ↔ DTO ↔ DO ↔ PO (Repository托管DO↔PO; Assembler转换DO→DTO; BFF组装DTO→VO)
 
-详见 [references/code-model-mapping.md](references/code-model-mapping.md)
+详见 [references/code-model-mapping.md](references/05-code-model-mapping.md)
 
 ## 与 ddd-event-storming 的关系
 
@@ -112,7 +112,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 9. **聚合根行为泄漏到Service** → 业务逻辑内聚在聚合根方法，Service只做编排
 10. **忽略统一语言(UL)** → 代码术语与业务语言保持一致
 
-详见 [references/ddd-tactical.md](references/ddd-tactical.md)
+详见 [references/ddd-tactical.md](references/06-ddd-tactical.md)
 
 ## 验证指南
 
@@ -139,29 +139,29 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 
 | File | Purpose |
 |------|---------|
-| [references/clean-ddd-hexagonal-strategic.md](references/clean-ddd-hexagonal-strategic.md) | DDD 战略设计—限界上下文、上下文映射、集成模式 |
-| [references/clean-ddd-hexagonal-tactical.md](references/clean-ddd-hexagonal-tactical.md) | DDD 战术设计—Entity/VO/Aggregate/Repository/Domain Event |
-| [references/ddd-tactical.md](references/ddd-tactical.md) | 战术模式补充—聚合内部构造、实体/值对象代码模板 |
-| [references/code-model-mapping.md](references/code-model-mapping.md) | 代码模型目录结构、对象映射表、分层策略 |
-| [references/advanced-tactical-patterns.md](references/advanced-tactical-patterns.md) | 进阶战术—Factory/Specification/Domain Service |
-| [references/domain-event-catalog.md](references/domain-event-catalog.md) | 领域事件设计指南—分类、数据结构、发布策略 |
-| [references/bounded-context-mapping.md](references/bounded-context-mapping.md) | 7种映射模式详解—决策树、Mermaid模板、代码示例 |
-| [references/persistence-strategies.md](references/persistence-strategies.md) | 值对象持久化策略—Inline/JSON/Embeddable决策树 |
-| [references/domain-invariants.md](references/domain-invariants.md) | 领域不变式设计—分类、实现模式、规格模式、文档模板 |
-| [references/guides/partme-13-code-model-1.md](references/guides/partme-13-code-model-1.md) | 代码模型(上)—DDD微服务代码模型设计 |
-| [references/guides/partme-14-code-model-2.md](references/guides/partme-14-code-model-2.md) | 代码模型(下)—领域模型与代码模型一致性保证 |
+| [references/clean-ddd-hexagonal-strategic.md](references/03-clean-ddd-hexagonal-strategic.md) | DDD 战略设计—限界上下文、上下文映射、集成模式 |
+| [references/clean-ddd-hexagonal-tactical.md](references/04-clean-ddd-hexagonal-tactical.md) | DDD 战术设计—Entity/VO/Aggregate/Repository/Domain Event |
+| [references/ddd-tactical.md](references/06-ddd-tactical.md) | 战术模式补充—聚合内部构造、实体/值对象代码模板 |
+| [references/code-model-mapping.md](references/05-code-model-mapping.md) | 代码模型目录结构、对象映射表、分层策略 |
+| [references/advanced-tactical-patterns.md](references/01-advanced-tactical-patterns.md) | 进阶战术—Factory/Specification/Domain Service |
+| [references/domain-event-catalog.md](references/07-domain-event-catalog.md) | 领域事件设计指南—分类、数据结构、发布策略 |
+| [references/bounded-context-mapping.md](references/02-bounded-context-mapping.md) | 7种映射模式详解—决策树、Mermaid模板、代码示例 |
+| [references/persistence-strategies.md](references/11-persistence-strategies.md) | 值对象持久化策略—Inline/JSON/Embeddable决策树 |
+| [references/domain-invariants.md](references/08-domain-invariants.md) | 领域不变式设计—分类、实现模式、规格模式、文档模板 |
+| [references/guides/partme-13-code-model-1.md](references/guides/09-partme-13-code-model-1.md) | 代码模型(上)—DDD微服务代码模型设计 |
+| [references/guides/partme-14-code-model-2.md](references/guides/10-partme-14-code-model-2.md) | 代码模型(下)—领域模型与代码模型一致性保证 |
 
 ## Examples
 
 | File | Domain |
 |------|--------|
-| [examples/ecommerce-domain.md](examples/ecommerce-domain.md) | 电商平台 |
-| [examples/banking-domain.md](examples/banking-domain.md) | 银行系统 |
-| [examples/insurance-domain.md](examples/insurance-domain.md) | 保险业务 |
-| [examples/order-fulfillment-domain.md](examples/order-fulfillment-domain.md) | 订单履约 |
-| [examples/healthcare-domain.md](examples/healthcare-domain.md) | 医疗健康 |
-| [examples/payment-domain.md](examples/payment-domain.md) | 支付系统 |
-| [examples/logistic-domain.md](examples/logistic-domain.md) | 物流运输 |
+| [examples/ecommerce-domain.md](examples/02-ecommerce-domain.md) | 电商平台 |
+| [examples/banking-domain.md](examples/01-banking-domain.md) | 银行系统 |
+| [examples/insurance-domain.md](examples/04-insurance-domain.md) | 保险业务 |
+| [examples/order-fulfillment-domain.md](examples/06-order-fulfillment-domain.md) | 订单履约 |
+| [examples/healthcare-domain.md](examples/03-healthcare-domain.md) | 医疗健康 |
+| [examples/payment-domain.md](examples/07-payment-domain.md) | 支付系统 |
+| [examples/logistic-domain.md](examples/05-logistic-domain.md) | 物流运输 |
 
 ## Security & Safety
 

@@ -63,7 +63,7 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
 - **P1 — 应该修复**: Controller 业务逻辑、Application Service 有 SQL、值对象可变
 - **P2 — 持续改进**: 聚合过大、缺少领域事件、跨聚合事务
 
-> 完整反模式速查表见 [references/checklist.md](references/checklist.md)，含 Java 代码示例和修复路径。
+> 完整反模式速查表见 [references/checklist.md](references/02-checklist.md)，含 Java 代码示例和修复路径。
 
 ## Layered Compliance Matrix
 
@@ -87,13 +87,13 @@ This skill is designed for: **Backend developers** (implementing DDD architectur
   - ✓ `import java.util.Optional`
   - ✓ `import java.math.BigDecimal`
 
-ArchUnit 完整配置见 [references/archunit-config.md](references/archunit-config.md)。
+ArchUnit 完整配置见 [references/archunit-config.md](references/01-archunit-config.md)。
 
 ## Rich Domain Model Validation
 
 Rich models encapsulate behavior in entities (pass); anemic models expose state via getters/setters (fail). Key: behavior in Entity vs behavior in Service.
 
-> 完整代码示例和重构对比见 [examples/rich-model-refactoring.md](examples/rich-model-refactoring.md)，含 3 个实战案例。
+> 完整代码示例和重构对比见 [examples/rich-model-refactoring.md](examples/04-rich-model-refactoring.md)，含 3 个实战案例。
 
 ## Scoring System
 
@@ -118,7 +118,7 @@ Rich models encapsulate behavior in entities (pass); anemic models expose state 
 | 50-69 | 🟠 C | 存在明显反模式 | 规划重构 Sprint |
 | < 50 | 🔴 D | 需要大面积重构 | 阻塞合并，必须先重构 |
 
-评分细则和计算示例见 [references/scoring-criteria.md](references/scoring-criteria.md)、[examples/scoring-example.md](examples/scoring-example.md)。
+评分细则和计算示例见 [references/scoring-criteria.md](references/09-scoring-criteria.md)、[examples/scoring-example.md](examples/05-scoring-example.md)。
 
 ## Review Report Template
 
@@ -153,11 +153,11 @@ Rich models encapsulate behavior in entities (pass); anemic models expose state 
 3. [P2] 为关键业务操作补充领域事件
 ```
 
-完整模板见 [references/report-template.md](references/report-template.md)、示例见 [examples/review-report-example.md](examples/review-report-example.md)。
+完整模板见 [references/report-template.md](references/08-report-template.md)、示例见 [examples/review-report-example.md](examples/03-review-report-example.md)。
 
 ## Gotchas
 
-常见审查陷阱见 [references/gotchas.md](references/gotchas.md)。
+常见审查陷阱见 [references/gotchas.md](references/06-gotchas.md)。
 
 ## FAQ
 
@@ -182,25 +182,25 @@ DDD 代码审查、反模式检测、贫血模型、充血模型、上帝 Servic
 
 | 文件 | 用途 |
 |------|------|
-| [references/checklist.md](references/checklist.md) | 反模式速查表 — P0/P1/P2 分级 + 修复路径 |
-| [references/scoring-criteria.md](references/scoring-criteria.md) | 5 维度评分细则 — 每项检查的权重和检测方法 |
-| [references/archunit-config.md](references/archunit-config.md) | ArchUnit 完整配置 — Maven/Gradle 依赖 + 全套检查规则 |
-| [references/report-template.md](references/report-template.md) | 审查报告模板 — Markdown + 快速摘要格式 |
-| [references/clean-ddd-hexagonal-layers.md](references/clean-ddd-hexagonal-layers.md) | 四层架构结构详解 — Domain/App/Infra/Presentation |
-| [references/clean-ddd-hexagonal-tactical.md](references/clean-ddd-hexagonal-tactical.md) | DDD 战术模式参考 — Entity/VO/Aggregate/Repository |
-| [references/clean-ddd-hexagonal-testing.md](references/clean-ddd-hexagonal-testing.md) | 测试模式 — 单元测试/集成测试/架构测试 |
-| [references/partme-15-boundaries.md](references/partme-15-boundaries.md) | 微服务边界理论 — 逻辑边界/物理边界/代码边界 |
-| [references/gotchas.md](references/gotchas.md) | 审查常见陷阱 — 跨聚合引用、PO/DTO 混用等 |
+| [references/checklist.md](references/02-checklist.md) | 反模式速查表 — P0/P1/P2 分级 + 修复路径 |
+| [references/scoring-criteria.md](references/09-scoring-criteria.md) | 5 维度评分细则 — 每项检查的权重和检测方法 |
+| [references/archunit-config.md](references/01-archunit-config.md) | ArchUnit 完整配置 — Maven/Gradle 依赖 + 全套检查规则 |
+| [references/report-template.md](references/08-report-template.md) | 审查报告模板 — Markdown + 快速摘要格式 |
+| [references/clean-ddd-hexagonal-layers.md](references/03-clean-ddd-hexagonal-layers.md) | 四层架构结构详解 — Domain/App/Infra/Presentation |
+| [references/clean-ddd-hexagonal-tactical.md](references/04-clean-ddd-hexagonal-tactical.md) | DDD 战术模式参考 — Entity/VO/Aggregate/Repository |
+| [references/clean-ddd-hexagonal-testing.md](references/05-clean-ddd-hexagonal-testing.md) | 测试模式 — 单元测试/集成测试/架构测试 |
+| [references/partme-15-boundaries.md](references/07-partme-15-boundaries.md) | 微服务边界理论 — 逻辑边界/物理边界/代码边界 |
+| [references/gotchas.md](references/06-gotchas.md) | 审查常见陷阱 — 跨聚合引用、PO/DTO 混用等 |
 
 ## Examples
 
 | 文件 | 用途 |
 |------|------|
-| [examples/review-report-example.md](examples/review-report-example.md) | 完整审查报告示例（62/100 🟠 C 级） |
-| [examples/scoring-example.md](examples/scoring-example.md) | 评分计算全过程 + 修复 ROI 分析 |
-| [examples/rich-model-refactoring.md](examples/rich-model-refactoring.md) | 贫血→充血模型重构：3 个实战案例 |
-| [examples/anti-pattern-fix-guide.md](examples/anti-pattern-fix-guide.md) | 反模式修复路径速查 |
-| [examples/archunit-compliance-test.md](examples/archunit-compliance-test.md) | ArchUnit 合规测试 — P0/P1/P2 门禁实现 |
+| [examples/review-report-example.md](examples/03-review-report-example.md) | 完整审查报告示例（62/100 🟠 C 级） |
+| [examples/scoring-example.md](examples/05-scoring-example.md) | 评分计算全过程 + 修复 ROI 分析 |
+| [examples/rich-model-refactoring.md](examples/04-rich-model-refactoring.md) | 贫血→充血模型重构：3 个实战案例 |
+| [examples/anti-pattern-fix-guide.md](examples/01-anti-pattern-fix-guide.md) | 反模式修复路径速查 |
+| [examples/archunit-compliance-test.md](examples/02-archunit-compliance-test.md) | ArchUnit 合规测试 — P0/P1/P2 门禁实现 |
 
 ## Next Steps
 

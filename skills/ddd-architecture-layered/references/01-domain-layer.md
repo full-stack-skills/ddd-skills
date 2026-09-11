@@ -134,5 +134,5 @@ public class PricingService {
 
 - Eric Evans 《领域驱动设计》第 4-6 章
 - Vaughn Vernon 《实现领域驱动设计》第 7-10 章
-- [ddd4j-layered-structure.md](./ddd4j-layered-structure.md)
-- [directory-structure.md](./directory-structure.md)
+- [ddd4j-layered-structure.md](./12-ddd4j-layered-structure.md)
+- [directory-structure.md](./13-directory-structure.md)

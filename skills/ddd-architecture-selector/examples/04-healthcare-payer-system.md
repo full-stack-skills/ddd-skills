@@ -79,7 +79,7 @@ Shared: Common.Domain (base types, domain primitives)
 
 ## Next Steps
 
-1. Proceed to [ddd-architecture-onion](../ddd-architecture-onion/) for implementation
+1. Proceed to **`ddd-architecture-onion`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-onion`) for implementation
 2. Claims Adjudication as first implementation module (highest domain complexity)
 3. Set up dependency validation (NetArchTest) to enforce Onion layering
 4. Revisit CQRS L2 evaluation when claims volume exceeds 1M/month

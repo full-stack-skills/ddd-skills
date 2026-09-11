@@ -80,6 +80,6 @@ Microservices split by bounded context:
 ## Next Steps
 
 1. Phase 1 → No architecture skill needed (standard Django MVC)
-2. Phase 2 migration → [ddd-architecture-hexagonal](../ddd-architecture-hexagonal/) for Port/Adapter pattern
-3. Phase 2 CQRS → [ddd-cqrs-architecture](../ddd-cqrs-architecture/) for L1 model separation
-4. Phase 3 scaling → [ddd-architecture-evaluator](../ddd-architecture-evaluator/) for migration readiness assessment
+2. Phase 2 migration → **`ddd-architecture-hexagonal`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-hexagonal`) for Port/Adapter pattern
+3. Phase 2 CQRS → **`ddd-cqrs-architecture`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`) for L1 model separation
+4. Phase 3 scaling → **`ddd-architecture-evaluator`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-evaluator`) for migration readiness assessment

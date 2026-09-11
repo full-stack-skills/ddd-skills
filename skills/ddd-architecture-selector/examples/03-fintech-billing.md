@@ -77,8 +77,8 @@ Shared Kernel: Money, Currency, Rate (across all squads)
 
 ## Next Steps
 
-1. Proceed to [ddd-architecture-clean](../ddd-architecture-clean/) for Clean Architecture implementation
-2. Follow with [ddd-cqrs-architecture](../ddd-cqrs-architecture/) for Event Sourcing deep-dive
+1. Proceed to **`ddd-architecture-clean`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-architecture-clean`) for Clean Architecture implementation
+2. Follow with **`ddd-cqrs-architecture`** skill (install: `npx skills add full-stack-skills/ddd-skills --skill ddd-cqrs-architecture`) for Event Sourcing deep-dive
 3. Billing Engine as first implementation (highest complexity Core domain)
 4. Define shared kernel module for Money, Currency value objects
 5. Set up ArchUnit + commit hooks for dependency rule enforcement

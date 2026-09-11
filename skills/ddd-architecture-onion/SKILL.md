@@ -163,11 +163,11 @@ DDD layered, clean architecture comparison, hexagonal comparison
 
 | 示例 | 说明 |
 |------|------|
-| [examples/example-01-order-payment.md](examples/example-01-order-payment.md) | 订单支付完整示例（含 Domain/Application/Infra/API） |
-| [examples/example-02-product-catalog.md](examples/example-02-product-catalog.md) | 产品目录管理示例（含多聚合协作） |
-| [examples/example-03-multi-entry.md](examples/example-03-multi-entry.md) | 多入口系统示例（REST + MQ + CLI 三种适配器） |
-| [examples/example-04-cqrs-onion.md](examples/example-04-cqrs-onion.md) | CQRS + 洋葱融合示例（Command/Query 分离） |
-| [examples/example-05-user-registration.md](examples/example-05-user-registration.md) | 用户注册 + 邮件验证示例 |
+| [examples/example-01-order-payment.md](examples/01-order-payment.md) | 订单支付完整示例（含 Domain/Application/Infra/API） |
+| [examples/example-02-product-catalog.md](examples/02-product-catalog.md) | 产品目录管理示例（含多聚合协作） |
+| [examples/example-03-multi-entry.md](examples/03-multi-entry.md) | 多入口系统示例（REST + MQ + CLI 三种适配器） |
+| [examples/example-04-cqrs-onion.md](examples/04-cqrs-onion.md) | CQRS + 洋葱融合示例（Command/Query 分离） |
+| [examples/example-05-user-registration.md](examples/05-user-registration.md) | 用户注册 + 邮件验证示例 |
 
 ### 项目规模示例
 

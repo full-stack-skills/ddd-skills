@@ -83,7 +83,7 @@ Step 4: Plan Evolution
 | L4 | Scaled（规模化级） | Multi-BC + CQRS + automated ArchUnit CI | ≥ 5/7 |
 | L5 | Optimized（优化级） | Continuous evolution + ES + ADR + debt dashboard | ≥ 5/7 |
 
-> 完整逐级检查清单见 [maturity-levels-detail.md](references/maturity-levels-detail.md)。
+> 完整逐级检查清单见 [maturity-levels-detail.md](references/06-maturity-levels-detail.md)。
 
 ## Architecture Fitness 5-Dimension Assessment
 
@@ -105,7 +105,7 @@ Score interpretation:
   < 2.0  → 🔴 Critical
 ```
 
-See [fitness-assessment-template.md](references/fitness-assessment-template.md) for full scoring rubrics and assessment prompts.
+See [fitness-assessment-template.md](references/04-fitness-assessment-template.md) for full scoring rubrics and assessment prompts.
 
 ## Technical Debt Quantification
 
@@ -128,7 +128,7 @@ Total Debt = Structural×0.5 + Design×0.3 + Testing×0.2
 | 41–60 | 🟠 Moderate | 本季度制定计划 |
 | > 60 | 🔴 Severe | 立即启动重构 |
 
-> 详细方法论和计算示例见 [debt-calculation-guide.md](references/debt-calculation-guide.md)。
+> 详细方法论和计算示例见 [debt-calculation-guide.md](references/02-debt-calculation-guide.md)。
 
 ## 4-Phase Evolution Roadmap
 
@@ -164,11 +164,11 @@ Traditional 3-Layer → DDD 4-Layer → DDD + Rich Domain → Hexagonal/Clean �
 | **Medium** | Non-core features | Parallel run with traffic mirroring |
 | **Low** | Read-only / queries | Direct switch with performance validation |
 
-See [migration-risk-checklist.md](references/migration-risk-checklist.md) for full migration assessment templates.
+See [migration-risk-checklist.md](references/08-migration-risk-checklist.md) for full migration assessment templates.
 
 ## Gotchas
 
-> 常见评估陷阱见 [references/gotchas.md](references/gotchas.md)。
+> 常见评估陷阱见 [references/gotchas.md](references/05-gotchas.md)。
 
 ## FAQ
 
@@ -187,15 +187,15 @@ DDD maturity, architecture fitness, technical debt, architecture evolution, migr
 ## References
 
 - [maturity/assessment-workflow.md](references/maturity/assessment-workflow.md) — Maturity assessment preparation, session workflow, and common traps
-- [maturity/maturity-levels-detail.md](references/maturity/maturity-levels-detail.md) — Per-level detailed checklists with scoring
+- [maturity/maturity-levels-detail.md](references/06-maturity-levels-detail.md) — Per-level detailed checklists with scoring
 - [fitness/scoring-rubric.md](references/fitness/scoring-rubric.md) — Scoring rubric with context-based calibration
-- [fitness/fitness-assessment-template.md](references/fitness/fitness-assessment-template.md) — 5-dimension scoring rubrics and prompts
+- [fitness/fitness-assessment-template.md](references/04-fitness-assessment-template.md) — 5-dimension scoring rubrics and prompts
 - [debt/repayment-strategies.md](references/debt/repayment-strategies.md) — Debt repayment strategies and prioritization matrix
-- [debt/debt-calculation-guide.md](references/debt/debt-calculation-guide.md) — Technical debt methodology with examples
+- [debt/debt-calculation-guide.md](references/02-debt-calculation-guide.md) — Technical debt methodology with examples
 - [migration/strangler-fig-detailed.md](references/migration/strangler-fig-detailed.md) — Detailed Strangler Fig migration planning
-- [migration/migration-risk-checklist.md](references/migration/migration-risk-checklist.md) — Migration readiness checklist and risk matrix
-- [evolution-cases.md](references/evolution-cases.md) — Real-world evolution case studies (e-commerce, FinTech, SaaS)
-- [code-smells-diagnosis.md](references/code-smells-diagnosis.md) — Architecture anti-patterns and diagnosis
-- [migration-path.md](references/migration-path.md) — 6-step MVC-to-DDD migration path
-- [partme-11-ddd-refactoring.md](references/partme-11-ddd-refactoring.md) — DDD refactoring case study with enterprise modeling
-- [gotchas.md](references/gotchas.md) — 评估常见陷阱（评分偏差、迁移成本、团队能力等）
+- [migration/migration-risk-checklist.md](references/08-migration-risk-checklist.md) — Migration readiness checklist and risk matrix
+- [evolution-cases.md](references/03-evolution-cases.md) — Real-world evolution case studies (e-commerce, FinTech, SaaS)
+- [code-smells-diagnosis.md](references/01-code-smells-diagnosis.md) — Architecture anti-patterns and diagnosis
+- [migration-path.md](references/07-migration-path.md) — 6-step MVC-to-DDD migration path
+- [partme-11-ddd-refactoring.md](references/09-partme-11-ddd-refactoring.md) — DDD refactoring case study with enterprise modeling
+- [gotchas.md](references/05-gotchas.md) — 评估常见陷阱（评分偏差、迁移成本、团队能力等）

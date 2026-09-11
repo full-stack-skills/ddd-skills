@@ -174,16 +174,16 @@ DTO 暴露枚举→string code | Command/Query DTO 混用→分开 | null 安全
 
 ## Examples
 
-- [examples/order-api-design.md](examples/order-api-design.md) — 订单服务案例
-- [examples/user-api-design.md](examples/user-api-design.md) — 用户服务案例：注册/登录/资料 + 安全设计
-- [examples/BFF-aggregation-example.md](examples/BFF-aggregation-example.md) — BFF 聚合案例：订单详情页多服务数据聚合
-- [examples/api-version-migration.md](examples/api-version-migration.md) — API 版本迁移案例：v1 → v2 全流程
-- [examples/payment-api-design.md](examples/payment-api-design.md) — 支付服务 API 案例：退款幂等、状态机、异步通知
-- [examples/openapi-codegen-example.md](examples/openapi-codegen-example.md) — OpenAPI 代码生成案例：Spec-first 策略
-- [examples/product-api-design.md](examples/product-api-design.md) — 商品服务 API 案例
-- [examples/inventory-api-design.md](examples/inventory-api-design.md) — 库存服务 API 案例
-- [examples/notification-api-design.md](examples/notification-api-design.md) — 通知服务 API 案例
-- [examples/search-api-design.md](examples/search-api-design.md) — 搜索服务 API 案例
+- [examples/order-api-design.md](examples/06-order-api-design.md) — 订单服务案例
+- [examples/user-api-design.md](examples/10-user-api-design.md) — 用户服务案例：注册/登录/资料 + 安全设计
+- [examples/BFF-aggregation-example.md](examples/01-BFF-aggregation-example.md) — BFF 聚合案例：订单详情页多服务数据聚合
+- [examples/api-version-migration.md](examples/02-api-version-migration.md) — API 版本迁移案例：v1 → v2 全流程
+- [examples/payment-api-design.md](examples/07-payment-api-design.md) — 支付服务 API 案例：退款幂等、状态机、异步通知
+- [examples/openapi-codegen-example.md](examples/05-openapi-codegen-example.md) — OpenAPI 代码生成案例：Spec-first 策略
+- [examples/product-api-design.md](examples/08-product-api-design.md) — 商品服务 API 案例
+- [examples/inventory-api-design.md](examples/03-inventory-api-design.md) — 库存服务 API 案例
+- [examples/notification-api-design.md](examples/04-notification-api-design.md) — 通知服务 API 案例
+- [examples/search-api-design.md](examples/09-search-api-design.md) — 搜索服务 API 案例
 
 ---
 
