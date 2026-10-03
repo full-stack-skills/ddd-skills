@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Onion"
+  short_description: "Onion Architecture (洋葱架构) — Jeffrey Palermo's onion…"
+  default_prompt: "使用 $ddd-architecture-onion，围绕“Onion Architecture (洋葱架构) — Jeffrey Palermo's onion”处理我的当前需求。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Code Reviewer"
+  short_description: "DDD code review and anti-pattern detection — anemia model…"
+  default_prompt: "Use $ddd-code-reviewer to help with my current task: DDD code review and anti-pattern detection — anemia model detection, layered compliance checking, aggregate design review, rich model verification, scoring system (5 dimensions)…"

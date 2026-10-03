@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Clean"
+  short_description: "Clean Architecture (整洁架构) — Robert C"
+  default_prompt: "使用 $ddd-architecture-clean，围绕“Clean Architecture (整洁架构) — Robert C”处理我的当前需求。"

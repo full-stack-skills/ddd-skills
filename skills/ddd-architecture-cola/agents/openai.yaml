@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Cola"
+  short_description: "COLA v5 Architecture (菱形架构) — Alibaba's COLA framework with…"
+  default_prompt: "使用 $ddd-architecture-cola，围绕“COLA v5 Architecture (菱形架构) — Alibaba's COLA framework with”处理我的当前需求。"

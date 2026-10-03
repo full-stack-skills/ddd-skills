@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Layered"
+  short_description: "DDD Layered Architecture (DDD 四层架构) — Traditional 3-layer to…"
+  default_prompt: "使用 $ddd-architecture-layered，围绕“DDD Layered Architecture (DDD 四层架构) — Traditional 3-layer to”处理我的当前需求。"

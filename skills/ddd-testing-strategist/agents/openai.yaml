@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Testing Strategist"
+  short_description: "DDD testing strategy — domain model unit testing, aggregate…"
+  default_prompt: "Use $ddd-testing-strategist to help with my current task: DDD testing strategy — domain model unit testing, aggregate root testing, repository testing with mocks, application service integration testing, adapter E2E testing, test…"

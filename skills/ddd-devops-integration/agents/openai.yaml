@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Devops Integration"
+  short_description: "DDD DevOps integration — CI/CD pipeline with ArchUnit…"
+  default_prompt: "Use $ddd-devops-integration to help with my current task: DDD DevOps integration — CI/CD pipeline with ArchUnit automated architecture validation, multi-module build optimization for DDD projects, containerized deployment with…"

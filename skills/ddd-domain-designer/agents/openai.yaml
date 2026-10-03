@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Domain Designer"
+  short_description: "Domain-driven design complete workflow — event-storming-driven…"
+  default_prompt: "Use $ddd-domain-designer to help with my current task: Domain-driven design complete workflow — event-storming-driven 6-step domain modeling process, aggregate design 5-principles + 6-rules, bounded context identification…"

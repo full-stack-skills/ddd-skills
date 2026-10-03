@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Awesome"
+  short_description: "Domain-Driven Design (DDD) concepts, strategic design…"
+  default_prompt: "Use $ddd-architecture-awesome to help with my current task: Provides comprehensive guidance for Domain-Driven Design (DDD) concepts, strategic design, tactical design, and architecture patterns."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD CQRS Architecture"
+  short_description: "CQRS Architecture — independent CQRS skill covering L1/L2/L3…"
+  default_prompt: "Use $ddd-cqrs-architecture to help with my current task: Comprehensive guidance for CQRS Architecture — independent CQRS skill covering L1/L2/L3 implementation levels, Event Sourcing, idempotency design, domain event lifecycle, and…"

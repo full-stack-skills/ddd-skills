@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Doc"
+  short_description: "DDD architecture documentation generation — C4 model diagrams…"
+  default_prompt: "Use $ddd-architecture-doc to help with my current task: DDD architecture documentation generation — C4 model diagrams (Context/Container/Component/Code), ADR (Architecture Decision Records), domain model documentation, API…"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD API Designer"
+  short_description: "API design from domain model — CQRS command/query separation…"
+  default_prompt: "Use $ddd-api-designer to help with my current task: API design from domain model — CQRS command/query separation, REST API endpoint design, data object conversion chain (PO→DO→DTO→VO), unified response format, OpenAPI/Swagger…"

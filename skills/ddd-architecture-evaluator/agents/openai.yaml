@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Evaluator"
+  short_description: "DDD architecture evaluation and evolution — DDD maturity…"
+  default_prompt: "Use $ddd-architecture-evaluator to help with my current task: DDD architecture evaluation and evolution — DDD maturity 5-level model (AdHoc/Aware/Applied/Scaled/Optimized), architecture fitness assessment (business alignment/team fit/tech…"

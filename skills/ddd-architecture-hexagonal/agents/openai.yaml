@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Hexagonal"
+  short_description: "Hexagonal Architecture (Ports & Adapters) — Alistair…"
+  default_prompt: "Use $ddd-architecture-hexagonal to help with my current task: Comprehensive guidance for Hexagonal Architecture (Ports & Adapters) — Alistair Cockburn's hexagonal architecture with domain core, port definitions, adapter implementations, and…"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Event Storming"
+  short_description: "Event Storming workshop facilitation guide — collaborative…"
+  default_prompt: "Use $ddd-event-storming to help with my current task: Event Storming workshop facilitation guide — collaborative domain exploration methodology with 6-step process (chaos exploration/timeline/pivotal events/commands &…"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DDD Architecture Selector"
+  short_description: "Architecture selection decision guide — help users choose from…"
+  default_prompt: "Use $ddd-architecture-selector to help with my current task: Architecture selection decision guide — help users choose from 5 DDD architectures (Layered/Onion/Hexagonal/Clean/COLA) with decision matrix, team size mapping, domain…"
